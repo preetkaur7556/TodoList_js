@@ -2,6 +2,7 @@
     --container-bg-color:rgb(29, 37, 45);
     --white-text-color:#ffffff;
     --btn-background-color:rgb(55, 210, 55);
+    --red-text-color:red;
 }
 *{
     margin: 0;
@@ -66,10 +67,75 @@ h1{
     color: var(--container-bg-color);
     box-shadow: 1px 1px  black;
 }
-.upper-container, .bottom-container{
+.upper-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 font: 500 1.3vw sans-serif;
+}
+
+/* -------------------------------bottom container */
+.bottom-container{
+    margin-top: 10px;
+    min-height: 100vh;
+    border: 1px solid white;
+    width: 99%;
+    display: flex;
+   flex-direction: column;
+
+}
+.tasks{
+    height: 100%;
+    width: 90%;
+    margin: 10px auto;
+    /* border: .4px solid green; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #746358;;
+
+}
+.content{
+    width: 96%;
+    /* border: .2px solid orange; */
+    margin: 12px 0px;
+}
+.dltbtn{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   font-size: large;
+   font-weight: 800;
+   border-radius: 50%;
+   background-color: var(--red-text-color);
+   color: black;
+   border: none;
+   margin-left: -7px;
+}
+.title{
+    font: 600 19px sans-serif;
+}
+.title , .description{
+    padding: 6px;
+/* border: 1px solid green; */
+margin: 10px 6px;
+letter-spacing: .8px;
+}
+.description{
+    font: 0 15px ;
+    font-style: italic;
+    /* line-height: 3px; */
+    color: rgba(255 , 255 , 255 , .4);
+}
+.dltbtn , .btn{
+    cursor: pointer;
+}
+.dltbtn:hover{
+    color: var(--white-text-color);
+    background-color: var(--container-bg-color);
+    border: 1px solid var(--white-text-color);
 }
