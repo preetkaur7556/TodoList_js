@@ -15,8 +15,8 @@
     background-color: var(--white-text-color);
 }
 #main{
-    height: 100%;
-    width: 100%;
+    min-height: 100vh;
+    width: 100vw;
     /* background-color: blue; */
     display: flex;
     align-items: center;
@@ -24,8 +24,8 @@
 }
 /* container */
 .container{
-    min-height: 100%;
-    width: 80%;
+    min-height: 100vh;
+    width: 80vw;
     background-color: var(--container-bg-color);
     display: flex;
     flex-direction: column;
@@ -54,9 +54,10 @@ h1{
 .upper-container .btn{
     padding: 12px 20px;
     color: black;
+    width: 80%;
     background-color: var(--btn-background-color);
     border-radius: 12px;
-    font: 800 13px sans-serif;
+    font:900 13px sans-serif;
     border: none;
     outline: none;
     margin: 10px;
@@ -64,7 +65,7 @@ h1{
 }
 .upper-container .btn:hover{
     background-color: var(--white-text-color);
-    color: var(--container-bg-color);
+    color: var(--btn-background-color);
     box-shadow: 1px 1px  black;
 }
 .upper-container form{
@@ -86,8 +87,8 @@ font: 500 1.3vw sans-serif;
    flex-direction: column;
 
 }
-.tasks{
-    height: 100%;
+.task{
+    min-height: 100%;
     width: 90%;
     margin: 10px auto;
     /* border: .4px solid green; */
